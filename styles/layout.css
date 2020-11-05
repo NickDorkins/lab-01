@@ -1,7 +1,13 @@
-/* Refernce: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
-@media only screen and (max-width: 768px) {
 
-div {
+
+/* Mobile View */
+
+@media only screen and (max-width: 768px) {
+body{
+width: 480px;
+}
+
+body {
   margin: auto;
 }
 
@@ -37,12 +43,17 @@ div {
 }
 
 #e, #g {
-  float:left;
+ float:left;
+}
+
+#f, #h {
+  float: right;
 }
 
 #i {
   width:478px;
   height: 73px;
+  float: left;
 }
 
 .sideBySide {
@@ -54,13 +65,13 @@ div {
 
 @media only screen and (min-width: 769px) {
     
-  #contOne{
+  #contTwo{
       float: left;
   }
   
   /* Don't forget to substract 2px for the 1px border */
   #a {
-      width: 958px;
+      width: 955px;
       height: 98px;
       line-height: 98px;
   }
@@ -72,7 +83,7 @@ div {
       line-height: 598px;
   }
   #c, #d {
-      width: 378px;
+      width: 372px;
       height: 198px;
       line-height: 198px;
   }
@@ -80,21 +91,26 @@ div {
   #c {
       float: left;
   }
+
+  #d {
+    float: right;
+  }
   
   #e, #f, #g, #h {
-      width: 188px;
+      width: 183px;
       height: 248px;
       line-height: 248px;
   }
   
-  #e, #g {
+  #e, #f, #g, #h {
       float: left;
   }    
   
   #i {
-      width: 758px;
-      height: 148px;
+      width: 750px;
+      height: 140px;
       line-height: 148px;
+      float: left;
   }
   
   #sideBySide {
